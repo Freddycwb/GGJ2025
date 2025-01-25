@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BubbleMaterial
-  m_Shader: {fileID: 4800000, guid: 6dcb6d80ed39e42cbbac5784a719d3e0, type: 3}
+  m_Shader: {fileID: 4800000, guid: cf1fbf4ced38443829bc4520131faa07, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -32,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 48b5cf26467574427b008ea8df3b9968, type: 3}
+        m_Texture: {fileID: 2800000, guid: 15dafaeb76bb647cdb47abf7afe54322, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
@@ -55,5 +55,6 @@ Material:
     m_Colors:
     - _Color: {r: 0.42796195, g: 1, b: 0, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Resolution: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
