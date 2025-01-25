@@ -6,14 +6,16 @@ using UnityEngine.InputSystem.Controls;
 
 public class PlayerMovementDirection : MonoBehaviour, IInputDirection
 {
+    [SerializeField] private int id;
+
     public Vector2 direction
     {
         get
         {
             Vector2 gamepadMove = Vector2.zero;
-            if (Gamepad.current != null)
+            if (id < Gamepad.all.Count)
             {
-                StickControl stick = Gamepad.current.leftStick;
+                StickControl stick = Gamepad.all[id].leftStick;
                 gamepadMove = new Vector2(stick.right.value - stick.left.value, stick.up.value - stick.down.value);
                 if (gamepadMove.magnitude < 0.5f)
                 {

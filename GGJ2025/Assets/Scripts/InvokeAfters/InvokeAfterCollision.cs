@@ -40,21 +40,17 @@ public class InvokeAfterCollision : InvokeAfter
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("1");
         if (!((collisionTypes & Types.trigger) != 0 && other.GetComponent<Collider2D>().isTrigger) && 
             !((collisionTypes & Types.collision) != 0 && !other.GetComponent<Collider2D>().isTrigger))
         {
             return;
         }
-        Debug.Log("2");
         if (tags.Count == 0 || tags.Contains(other.tag))
         {
-            Debug.Log("3");
             if (collisionsThisFrame.Contains(other.gameObject))
             {
                 return;
             }
-            Debug.Log("4");
             lastCollision = other.gameObject;
             if (onImpact != null)
             {

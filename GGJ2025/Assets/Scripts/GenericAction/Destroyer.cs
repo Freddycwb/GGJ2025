@@ -61,7 +61,6 @@ public class Destroyer : MonoBehaviour
     private IEnumerator DeleteRoutine()
     {
         yield return new WaitForSeconds(delay);
-        Debug.Log("delete routine");
         if (onDelete != null)
         {
             onDelete.Invoke(this);

@@ -4,11 +4,13 @@ using UnityEngine.InputSystem.Controls;
 
 public class PlayerMoveButton : MonoBehaviour, IInputAction
 {
+	[SerializeField] private int id;
+
 	public bool buttonDown {
 		get {
 			bool gamepad = false;
-			if (Gamepad.current != null) {
-				gamepad = Gamepad.current.rightTrigger.wasPressedThisFrame || Gamepad.current.leftTrigger.wasPressedThisFrame;
+			if (id < Gamepad.all.Count) {
+				gamepad = Gamepad.all[id].rightTrigger.wasPressedThisFrame || Gamepad.all[id].leftTrigger.wasPressedThisFrame;
 			}
 			return Input.GetKeyDown(KeyCode.Space) || gamepad;
 		}
@@ -17,8 +19,8 @@ public class PlayerMoveButton : MonoBehaviour, IInputAction
 	public bool buttonHold {
 		get {
 			bool gamepad = false;
-			if (Gamepad.current != null) {
-				gamepad = Gamepad.current.rightTrigger.isPressed || Gamepad.current.leftTrigger.isPressed;
+			if (id < Gamepad.all.Count) {
+				gamepad = Gamepad.all[id].rightTrigger.isPressed || Gamepad.all[id].leftTrigger.isPressed;
 			}
 			return Input.GetKey(KeyCode.Space) || gamepad;
 		}
@@ -27,8 +29,8 @@ public class PlayerMoveButton : MonoBehaviour, IInputAction
 	public bool buttonUp {
 		get {
 			bool gamepad = false;
-			if (Gamepad.current != null) {
-				gamepad = Gamepad.current.rightTrigger.wasReleasedThisFrame || Gamepad.current.leftTrigger.wasReleasedThisFrame;
+			if (id < Gamepad.all.Count) {
+				gamepad = Gamepad.all[id].rightTrigger.wasReleasedThisFrame || Gamepad.all[id].leftTrigger.wasReleasedThisFrame;
 			}
 			return Input.GetKeyUp(KeyCode.Space) || gamepad;
 		}
