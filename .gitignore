@@ -88,3 +88,4 @@ GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-0.log
 GGJ2025/Logs/shadercompiler-AssetImportWorker3-0.log
 GGJ2025/Logs/shadercompiler-AssetImportWorker2-0.log
 *.log
+.DS_Store
