@@ -10,6 +10,6 @@ public class ColorByPlayerCharge : MonoBehaviour
 	}
 
 	private void Update() {
-		spr.color = Color.Lerp(Color.white, Color.red, player.dashStrength / player.maxDashStrength);
+		spr.color = Color.Lerp(Color.white, Color.red, player.dashCurrentCharge / player.dashChargeTime);
 	}
 }

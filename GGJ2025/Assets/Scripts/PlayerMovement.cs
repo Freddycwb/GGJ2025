@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-	public float maxDashStrength;
-	[SerializeField] private float dashChargeSpeed;
-	[HideInInspector] public float dashStrength;
+	public float dashChargeTime;
+	[HideInInspector] public float dashCurrentCharge;
+
+	[SerializeField] private float maxDashStrength;
+	[SerializeField] private float maxDashStrengthBig;
 
 	[SerializeField] private float deaccel;
 
@@ -15,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
 	private IInputAction playerMoveBtn;
 
 	[SerializeField] private Rigidbody2D rb;
+
+	[SerializeField] private Grower playerSize;
 
 	private void Awake() {
 		playerDir = playerDirObj.GetComponent<IInputDirection>();
@@ -28,14 +32,14 @@ public class PlayerMovement : MonoBehaviour
 
 		// charge
 		if (playerMoveBtn.buttonHold) {
-			dashStrength += dashChargeSpeed * Time.deltaTime;
-			if (dashStrength > maxDashStrength) dashStrength = maxDashStrength;
+			dashCurrentCharge += Time.deltaTime;
+			if (dashCurrentCharge > dashChargeTime) dashCurrentCharge = dashChargeTime;
 			return;
 		}
 
 		// dash
 		if (!playerMoveBtn.buttonUp) return;
-		rb.linearVelocity = playerDir.direction * dashStrength;
-		dashStrength = 0;
+		rb.linearVelocity = playerDir.direction * (dashCurrentCharge / dashChargeTime) * Mathf.Lerp(maxDashStrength, maxDashStrengthBig, (float)playerSize.stage / (float)playerSize.totalStages);
+		dashCurrentCharge = 0;
 	}
 }
