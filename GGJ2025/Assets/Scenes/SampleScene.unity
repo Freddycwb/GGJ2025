@@ -390,6 +390,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2117185135331820321, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 11400000, guid: 896fe921d2773bd4098b772f5ff68f60, type: 2}
     - target: {fileID: 6027298539962883465, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: m_Name
       value: Player3
@@ -442,6 +446,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6981545963331500431, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: id
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8687340742624017013, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -493,6 +501,10 @@ PrefabInstance:
     - target: {fileID: 8985388489243857929, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: m_Color.r
       value: 0.8490566
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164398622539115687, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: id
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -790,7 +802,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4bfbc0980e0417543920324c730e0314, type: 2}
   - {fileID: 11400000, guid: 896fe921d2773bd4098b772f5ff68f60, type: 2}
   - {fileID: 11400000, guid: 9de98027e1715eb40863c04a4a80c2db, type: 2}
-  max_score: 30
+  max_score: 50
   gameIsOver: {fileID: 11400000, guid: bb4c88e59734e654fa76f442299794f6, type: 2}
 --- !u!4 &878591726
 Transform:
@@ -1117,6 +1129,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2117185135331820321, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 11400000, guid: 760f988714126694797fcd3bff22cd9a, type: 2}
     - target: {fileID: 6027298539962883465, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: m_Name
       value: Player1
@@ -1222,6 +1238,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2117185135331820321, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 11400000, guid: 4bfbc0980e0417543920324c730e0314, type: 2}
     - target: {fileID: 6027298539962883465, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: m_Name
       value: Player2
@@ -1273,6 +1293,10 @@ PrefabInstance:
     - target: {fileID: 6592074215815915991, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6981545963331500431, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: id
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8687340742624017013, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.size
@@ -1326,6 +1350,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.12991813
       objectReference: {fileID: 0}
+    - target: {fileID: 9164398622539115687, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: id
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1339,6 +1367,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2117185135331820321, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 11400000, guid: 9de98027e1715eb40863c04a4a80c2db, type: 2}
     - target: {fileID: 6027298539962883465, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: m_Name
       value: Player4
@@ -1391,6 +1423,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6981545963331500431, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: id
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8687340742624017013, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: action.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1442,6 +1478,10 @@ PrefabInstance:
     - target: {fileID: 8985388489243857929, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: m_Color.r
       value: 0.40221432
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164398622539115687, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: id
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

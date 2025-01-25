@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1317788488777135108}
   - component: {fileID: 8831378595407110076}
   - component: {fileID: 7485410929231021496}
+  - component: {fileID: 2423984286519036139}
+  - component: {fileID: 8172043293445579104}
   m_Layer: 0
   m_Name: TakeDamage
   m_TagString: Untagged
@@ -27,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671320854296485469}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.07, y: 1.18, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64,7 +66,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -127,6 +129,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 444f1db82ed07fc4997969de102dc024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2423984286519036139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671320854296485469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 796bb0d329e8fc4339f5880588712b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grower: {fileID: 2117185135331820321}
+  col: {fileID: 1317788488777135108}
+--- !u!114 &8172043293445579104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671320854296485469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192285e8a509b2a15bc071074f24237e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grower: {fileID: 2117185135331820321}
+  onStageChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2423984286519036139}
+        m_TargetAssemblyTypeName: SetColliderWithGrower, Assembly-CSharp
+        m_MethodName: OnStageChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1911940620020094517
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,13 +217,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4050868f052c51ba6330a65fe918dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dashChargeTime: 0.65
+  dashCurrentCharge: 0
   maxDashStrength: 12
-  dashChargeSpeed: 18
-  dashStrength: 25
+  maxDashStrengthBig: 6
   deaccel: 10
   playerDirObj: {fileID: 8439657228522155217}
   playerMoveBtnObj: {fileID: 3786440743322021624}
   rb: {fileID: 7050009531804270893}
+  playerSize: {fileID: 2117185135331820321}
 --- !u!1 &2544972729864689740
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +237,8 @@ GameObject:
   - component: {fileID: 7146263820260277572}
   - component: {fileID: 8985388489243857929}
   - component: {fileID: 5571443891227623035}
+  - component: {fileID: 5273251159102345575}
+  - component: {fileID: 854843715894226511}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -283,6 +331,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dirObj: {fileID: 8439657228522155217}
   offset: -90
+--- !u!114 &5273251159102345575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544972729864689740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3160ed94fead6b92a7a11c8ccc52b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grower: {fileID: 2117185135331820321}
+--- !u!114 &854843715894226511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544972729864689740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192285e8a509b2a15bc071074f24237e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grower: {fileID: 2117185135331820321}
+  onStageChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5273251159102345575}
+        m_TargetAssemblyTypeName: SetSizeWithGrower, Assembly-CSharp
+        m_MethodName: OnStageChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3786440743322021624
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,6 +496,86 @@ MonoBehaviour:
   obj: {fileID: 6027298539962883465}
   delay: 0
   onEnable: 0
+--- !u!1 &5861005078193148562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6215607103353195883}
+  - component: {fileID: 2117185135331820321}
+  - component: {fileID: 5676440119264216993}
+  m_Layer: 0
+  m_Name: Grower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6215607103353195883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5861005078193148562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6592074215815915991}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2117185135331820321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5861005078193148562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bd76fd678cc23428c4130abb47f4ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 0}
+  stage: 0
+  totalStages: 5
+  pointsPerStage: 7
+--- !u!114 &5676440119264216993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5861005078193148562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7711ecb93294b2748838b38b6955c6fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invokeAfter: {fileID: 8687340742624017013}
+  onActionCall:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2117185135331820321}
+        m_TargetAssemblyTypeName: Grower, Assembly-CSharp
+        m_MethodName: OnScoreChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onSubActionCall:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6027298539962883465
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +611,7 @@ Transform:
   - {fileID: 4784606371186822092}
   - {fileID: 7146263820260277572}
   - {fileID: 8808685505233767997}
+  - {fileID: 6215607103353195883}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &7050009531804270893
@@ -629,6 +799,8 @@ GameObject:
   - component: {fileID: 1646063620622244805}
   - component: {fileID: 8687340742624017013}
   - component: {fileID: 6112756313998784354}
+  - component: {fileID: 7525754403455814592}
+  - component: {fileID: 6842079678953279060}
   m_Layer: 0
   m_Name: EarnScore
   m_TagString: Player
@@ -750,3 +922,45 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7525754403455814592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8904098442326139926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 796bb0d329e8fc4339f5880588712b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grower: {fileID: 2117185135331820321}
+  col: {fileID: 1646063620622244805}
+--- !u!114 &6842079678953279060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8904098442326139926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192285e8a509b2a15bc071074f24237e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grower: {fileID: 2117185135331820321}
+  onStageChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7525754403455814592}
+        m_TargetAssemblyTypeName: SetColliderWithGrower, Assembly-CSharp
+        m_MethodName: OnStageChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
