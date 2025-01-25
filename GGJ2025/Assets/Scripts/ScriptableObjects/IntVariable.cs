@@ -24,4 +24,9 @@ public class IntVariable : NumericVariable<int>
     {
         Value += amount.Value;
     }
+
+    public void Divide(int amount)
+    {
+        Value /= amount;
+    }
 }
