@@ -70,7 +70,7 @@ public class GameController : MonoBehaviour
 
     private void finishGame(int winner)
     {
-        Debug.Log("Player " + winner + 1 + " Wins");
+        Debug.Log("Player " + (winner + 1) + " Wins");
         gameIsOver.Raise();
         //TODO: endgame
     }
