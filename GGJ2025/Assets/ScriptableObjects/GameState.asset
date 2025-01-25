@@ -9,6 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ba758b22bd97e14a86ef7c0494adb11, type: 3}
-  m_Name: ChangeGameState
+  m_Script: {fileID: 11500000, guid: 5fc1c39d8f66a8d0aba82d0090bd9ab3, type: 3}
+  m_Name: GameState
   m_EditorClassIdentifier: 
+  DeveloperDescription: 
+  stateEvent: {fileID: 11400000, guid: 9cfc27990576523fe9d7a75425bbb950, type: 2}
+  PersistBetweenScenes: 0

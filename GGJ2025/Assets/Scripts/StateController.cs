@@ -1,25 +1,17 @@
+using System;
 using UnityEngine;
 
 public class StateController : MonoBehaviour
 {
-    public enum GameStates{
-        NONE,
-        STATE1,
-        STATE2,
-        STATE3,
-    };
+    [SerializeField] private GameStateVariable gameState;
 
-    [SerializeField] private GameEvent changeState;
-    [SerializeField] public GameStates gameState = GameStates.NONE;
-
-    public void changeGameState(GameStates state)
-    {
-        gameState = state;
-        changeState.Raise();
+    public void RandomizeGameState() {
+        Array enumValues = Enum.GetValues(typeof(GameState));
+        gameState.Value = (GameState)enumValues.GetValue(UnityEngine.Random.Range(0, enumValues.Length));
     }
 
-    private void CreateDuck()
+    public void ChangeGameState(GameState state)
     {
-
+        gameState.Value = state;
     }
 }
