@@ -6,9 +6,6 @@ using UnityEngine.InputSystem.Controls;
 
 public class PlayerMovementDirection : MonoBehaviour, IInputDirection
 {
-    [SerializeField] private GameObject pov;
-    [SerializeField] private GameObjectVariable povVariable;
-
     public Vector2 direction
     {
         get
@@ -26,19 +23,7 @@ public class PlayerMovementDirection : MonoBehaviour, IInputDirection
             Vector2 keyboardMove = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
             Vector2 move = keyboardMove + gamepadMove;
 
-            pov = povVariable ? povVariable.Value : pov;
-
-            if (pov != null)
-            {
-                float headAngle = Mathf.Deg2Rad * (360 - pov.transform.rotation.eulerAngles.y);
-
-                Vector2 a = new Vector2(Mathf.Cos(headAngle), Mathf.Sin(headAngle));
-                Vector2 b = new Vector2(-Mathf.Sin(headAngle), Mathf.Cos(headAngle));
-
-                move = move.x * a + move.y * b;
-            }
-
-            return move;
+            return -move.normalized;
         }
     }
 }
