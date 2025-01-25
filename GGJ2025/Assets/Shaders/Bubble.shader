@@ -4,6 +4,7 @@ Shader "Custom/BubbleShader"
     {
         _MainTex ("Base (RGB)", 2D) = "white" { }
         _Resolution ("Resolution", Vector) = (1,1,0,0)
+        _TimeOffset ("TimeOffset", Float) = 0.0
     }
     SubShader
     {
@@ -18,6 +19,7 @@ Shader "Custom/BubbleShader"
             // Declarações de variáveis
             sampler2D _MainTex;
             float4 _Resolution;
+            float _TimeOffset;
 
             // Função de vértice
             struct appdata

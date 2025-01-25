@@ -28,8 +28,9 @@ public class GameController : MonoBehaviour
 
         if ( timer_spawn > _bubble_spawn_timer )
         {
-            timer_spawn = 0;
             GameObject newBubble = (GameObject)Instantiate(obj_bubble, getRandomXYPositionInScreen(), Quaternion.identity, obj_bubbles_group.transform);
+            // newBubble.transform.GetChild(1).GetComponent<SpriteRenderer>().material.SetFloat("_TimeOffset", Random.Range(0,1.0f));
+            timer_spawn = 0;
         }
     }
 
