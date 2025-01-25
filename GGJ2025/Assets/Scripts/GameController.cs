@@ -30,20 +30,10 @@ public class GameController : MonoBehaviour
         {
             Vector2 new_position = getRandomXYPositionInScreen();
 
-            while ( CheckIfPlayerIsIn(new_position) )
-            {
-                new_position = getRandomXYPositionInScreen();
-            }
-
             GameObject newBubble = (GameObject)Instantiate(obj_bubble, new_position, Quaternion.identity, obj_bubbles_group.transform);
             // newBubble.transform.GetChild(1).GetComponent<SpriteRenderer>().material.SetFloat("_TimeOffset", Random.Range(0,1.0f));
             timer_spawn = 0;
         }
-    }
-       
-    private bool CheckIfPlayerIsIn(Vector2 position)
-    {
-        return Physics2D.OverlapCircle(position, 0.5f, 3);
     }
 
     private void CreateInitialBubbles()
@@ -64,18 +54,23 @@ public class GameController : MonoBehaviour
 
     public void endGame()
     {
+        Vector2 scorePlayer = new Vector2(0,0);
+        int i = 0;
         foreach (var score in scores)
         {
-            if ( score.Value >= max_score )
+            if ( score.Value >= scorePlayer.x )
             {
-                finishGame();
+                scorePlayer.x = score.Value;
+                scorePlayer.y = i;
             }
+            i++;
         }
+        finishGame((int)scorePlayer.y);
     }
 
-    private void finishGame()
+    private void finishGame(int winner)
     {
-        Debug.Log("fim");
+        Debug.Log("Player " + winner + 1 + " Wins");
         gameIsOver.Raise();
         //TODO: endgame
     }
