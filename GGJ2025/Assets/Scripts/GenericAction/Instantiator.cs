@@ -2,15 +2,19 @@ using UnityEngine;
 
 public class Instantiator : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private GameObject obj;
+    [SerializeField] private GameObject spawnPoint;
+
+    public void Create()
     {
-        
+        Instantiate(obj, spawnPoint.transform.position, spawnPoint.transform.rotation);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CreateXObjects(int value)
     {
-        
+        for (int i = 0; i < value; i++)
+        {
+            Create();
+        }
     }
 }

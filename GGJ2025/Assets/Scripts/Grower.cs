@@ -8,6 +8,7 @@ public class Grower : MonoBehaviour
 	public int stage;
 	public int totalStages;
 	public int pointsPerStage;
+	public float growAmount;
 
 	public Action stageChanged;
 

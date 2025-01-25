@@ -6,6 +6,6 @@ public class SetColliderWithGrower : MonoBehaviour
 	[SerializeField] private CircleCollider2D col;
 
 	public void OnStageChanged() {
-		col.radius = (grower.stage + 1)/2.0f;
+		col.radius = 0.5f + grower.stage * grower.growAmount/2;
 	}
 }

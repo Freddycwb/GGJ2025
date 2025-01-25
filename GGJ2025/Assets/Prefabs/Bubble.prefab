@@ -100,7 +100,8 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  tags: []
+  tags:
+  - Player
   collisionTypes: -1
 --- !u!114 &3374824155018119048
 MonoBehaviour:
