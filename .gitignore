@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-GGJ2025/[Ll]ibrary/
-GGJ2025/[Tt]emp/
-GGJ2025/[Oo]bj/
-GGJ2025/[Bb]uild/
-GGJ2025/[Bb]uilds/
-GGJ2025/[Ll]ogs/
-GGJ2025/[Uu]ser[Ss]ettings/
+GGJ2025/[Ll]ibrary/*
+GGJ2025/[Tt]emp/*
+GGJ2025/[Oo]bj/*
+GGJ2025/[Bb]uild/*
+GGJ2025/[Bb]uilds/*
+GGJ2025/[Ll]ogs/*
+GGJ2025/[Uu]ser[Ss]ettings/*
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -71,3 +71,20 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+GGJ2025/UserSettings/Search.index
+GGJ2025/ProjectSettings/TagManager.asset
+GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-9.log
+GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-8.log
+GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-7.log
+GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-6.log
+GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-5.log
+GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-4.log
+GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-3.log
+GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-2.log
+GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-11.log
+GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-10.log
+GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-1.log
+GGJ2025/Logs/shadercompiler-UnityShaderCompiler.exe-0.log
+GGJ2025/Logs/shadercompiler-AssetImportWorker3-0.log
+GGJ2025/Logs/shadercompiler-AssetImportWorker2-0.log
+*.log
