@@ -38,18 +38,23 @@ public class InvokeAfterCollision : InvokeAfter
         return numberOfCollisions;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!((collisionTypes & Types.trigger) != 0 && other.GetComponent<Collider>().isTrigger) && !((collisionTypes & Types.collision) != 0 && !other.GetComponent<Collider>().isTrigger))
+        Debug.Log("1");
+        if (!((collisionTypes & Types.trigger) != 0 && other.GetComponent<Collider2D>().isTrigger) && 
+            !((collisionTypes & Types.collision) != 0 && !other.GetComponent<Collider2D>().isTrigger))
         {
             return;
         }
+        Debug.Log("2");
         if (tags.Count == 0 || tags.Contains(other.tag))
         {
+            Debug.Log("3");
             if (collisionsThisFrame.Contains(other.gameObject))
             {
                 return;
             }
+            Debug.Log("4");
             lastCollision = other.gameObject;
             if (onImpact != null)
             {
@@ -61,9 +66,9 @@ public class InvokeAfterCollision : InvokeAfter
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (!((collisionTypes & Types.trigger) != 0 && other.GetComponent<Collider>().isTrigger) && !((collisionTypes & Types.collision) != 0 && !other.GetComponent<Collider>().isTrigger))
+        if (!((collisionTypes & Types.trigger) != 0 && other.GetComponent<Collider2D>().isTrigger) && !((collisionTypes & Types.collision) != 0 && !other.GetComponent<Collider2D>().isTrigger))
         {
             return;
         }
@@ -78,7 +83,7 @@ public class InvokeAfterCollision : InvokeAfter
         }
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (!((collisionTypes & Types.trigger) != 0 && other.collider.isTrigger) && !((collisionTypes & Types.collision) != 0 && !other.collider.isTrigger))
         {
@@ -101,7 +106,7 @@ public class InvokeAfterCollision : InvokeAfter
         }
     }
 
-    private void OnCollisionExit(Collision other)
+    private void OnCollisionExit2D(Collision2D other)
     {
         if (!((collisionTypes & Types.trigger) != 0 && other.collider.isTrigger) && !((collisionTypes & Types.collision) != 0 && !other.collider.isTrigger))
         {

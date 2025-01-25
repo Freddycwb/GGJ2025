@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3374824155018119048}
   m_Layer: 0
   m_Name: Collision
-  m_TagString: Untagged
+  m_TagString: Bubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9592c7427eca54186c97c457429297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 0}
+  obj: {fileID: 8429686139018889524}
   delay: 0
   onEnable: 0
 --- !u!1 &7334751669457322205

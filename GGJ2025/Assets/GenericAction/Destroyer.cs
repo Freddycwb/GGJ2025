@@ -61,11 +61,13 @@ public class Destroyer : MonoBehaviour
     private IEnumerator DeleteRoutine()
     {
         yield return new WaitForSeconds(delay);
+        Debug.Log("delete routine");
         if (onDelete != null)
         {
             onDelete.Invoke(this);
         }
         yield return new WaitForEndOfFrame();
+        Destroy(obj);
     }
 
     private void DeleteNow()
@@ -74,6 +76,7 @@ public class Destroyer : MonoBehaviour
         {
             onDelete.Invoke(this);
         }
+        Destroy(obj);
     }
 
 

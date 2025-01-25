@@ -191,14 +191,13 @@ GameObject:
   - component: {fileID: 3433375810538649451}
   - component: {fileID: 3010200794348877142}
   - component: {fileID: 8687340742624017013}
-  - component: {fileID: 2643655880586530561}
   m_Layer: 0
   m_Name: EarnScore
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3433375810538649451
 Transform:
   m_ObjectHideFlags: 0
@@ -274,30 +273,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   action:
     m_PersistentCalls:
-      m_Calls: []
-  subAction:
-    m_PersistentCalls:
-      m_Calls: []
-  tags:
-  - Bubble
-  collisionTypes: -1
---- !u!114 &2643655880586530561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8904098442326139926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebdc9ca842ffff044b442c4073b5ff05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invokeAfterCollision: {fileID: 8687340742624017013}
-  onImpact:
-    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: d5755dafb1a69144ea47c48e016fd1ea, type: 2}
+      - m_Target: {fileID: 11400000, guid: 40cc24f3d07edd1418b1c6825baf7f6f, type: 2}
         m_TargetAssemblyTypeName: GameEventString, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 1
@@ -306,12 +283,12 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: juninho
+          m_StringArgument: Colidiu
           m_BoolArgument: 0
         m_CallState: 2
-  onLeave:
+  subAction:
     m_PersistentCalls:
       m_Calls: []
-  onCallLastCollisionAction:
-    m_PersistentCalls:
-      m_Calls: []
+  tags:
+  - Bubble
+  collisionTypes: -1
