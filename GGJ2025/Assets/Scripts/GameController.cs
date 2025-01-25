@@ -8,6 +8,12 @@ public class GameController : MonoBehaviour
     [SerializeField] public GameObject obj_bubbles_group;
     [SerializeField] private float _bubble_spawn_timer = 1.0f;
     [SerializeField] private int initial_bubbles = 10;
+    [SerializeField] private IntVariable[] scores;
+    [SerializeField] private int max_score = 30;
+    [SerializeField] private GameEvent gameIsOver;
+
+    private bool _is_game_end = false;
+
     private float timer_spawn;
 
     void Start()
@@ -41,5 +47,23 @@ public class GameController : MonoBehaviour
         float posY = Random.Range(Camera.main.ScreenToWorldPoint(new Vector2(0, 0)).y, Camera.main.ScreenToWorldPoint(new Vector2(0, Screen.height)).y);
 
         return new Vector2(posX, posY);
+    }
+
+    public void endGame()
+    {
+        foreach (var score in scores)
+        {
+            if ( score.Value >= max_score )
+            {
+                finishGame();
+            }
+        }
+    }
+
+    private void finishGame()
+    {
+        Debug.Log("fim");
+        gameIsOver.Raise();
+        //TODO: endgame
     }
 }
