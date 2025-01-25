@@ -28,10 +28,22 @@ public class GameController : MonoBehaviour
 
         if ( timer_spawn > _bubble_spawn_timer )
         {
-            GameObject newBubble = (GameObject)Instantiate(obj_bubble, getRandomXYPositionInScreen(), Quaternion.identity, obj_bubbles_group.transform);
+            Vector2 new_position = getRandomXYPositionInScreen();
+
+            while ( CheckIfPlayerIsIn(new_position) )
+            {
+                new_position = getRandomXYPositionInScreen();
+            }
+
+            GameObject newBubble = (GameObject)Instantiate(obj_bubble, new_position, Quaternion.identity, obj_bubbles_group.transform);
             // newBubble.transform.GetChild(1).GetComponent<SpriteRenderer>().material.SetFloat("_TimeOffset", Random.Range(0,1.0f));
             timer_spawn = 0;
         }
+    }
+       
+    private bool CheckIfPlayerIsIn(Vector2 position)
+    {
+        return Physics2D.OverlapCircle(position, 0.5f, 3);
     }
 
     private void CreateInitialBubbles()

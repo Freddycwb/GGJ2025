@@ -106,7 +106,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 1
+  timeToAction: 3
   startTimerOnEnabled: 0
   overrideLastTimer: 1
   useUnscaledTime: 0
@@ -281,7 +281,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8231798755589181720}
   - component: {fileID: 460434125947249929}
-  - component: {fileID: 4883699730055612993}
   m_Layer: 0
   m_Name: Movement
   m_TagString: Untagged
@@ -1174,7 +1173,7 @@ GameObject:
   - component: {fileID: 8687340742624017013}
   - component: {fileID: 7525754403455814592}
   - component: {fileID: 6842079678953279060}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarnScore
   m_TagString: Player
   m_Icon: {fileID: 0}
