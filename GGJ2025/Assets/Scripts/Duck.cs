@@ -5,31 +5,52 @@ using UnityEngine;
 
 public class Duck : MonoBehaviour
 {
+	[SerializeField] private float lifetime;
+	[SerializeField] private float delayTime;
 
-    public float delayTime;
-    public Vector3 posA;
-    public Vector3 posB;
+	[SerializeField] private float speed;
 
-    private void Awake()
-    {
-        posA = transform.position;
-        posB = new Vector3(9.5f, transform.position.y, 0);
-    }
+	[SerializeField] private float verticalRange;
 
-    void Start()
-    {
-        StartCoroutine(WaitAndMove(delayTime));
-    }
+	[SerializeField] private GameObject collider;
+	[SerializeField] private float colliderDelay;
 
-    IEnumerator WaitAndMove(float delayTime)
-    {
-        yield return new WaitForSeconds(delayTime); // start at time X
-        float startTime = Time.time; // Time.time contains current frame time, so remember starting point
-        while (Time.time - startTime <= 1)
-        { // until one second passed
-            transform.position = Vector3.Lerp(posA, posB, Time.time - startTime); // lerp from A to B in one second
-            yield return 1; // wait for next frame
-        }
-        Destroy(gameObject);
-    }
+	[SerializeField] private float yPosRange;
+
+	private Vector3 velocity;
+	private float startTime;
+	private bool colActivated;
+
+	private void Start() {
+		transform.position = new Vector3(Random.Range(0, 2) > 0? transform.position.x : -transform.position.x, transform.position.y + Random.Range(-yPosRange, yPosRange), 0);
+
+		float x = transform.position.x < 0.0f? 1 : -1;
+		float y = Random.Range(-verticalRange, verticalRange);
+		Vector2 dir = new Vector2(x, y).normalized;
+		velocity = dir * speed;
+
+		startTime = Time.time;
+	}
+
+	private void Update() {
+		float elapsed = Time.time - startTime;
+
+		if (elapsed >= lifetime) {
+			Destroy(gameObject);
+			return;
+		}
+
+		if (!colActivated && elapsed >= colliderDelay) {
+			collider.SetActive(true);
+			colActivated = true;
+		}
+
+		// deaccel
+		float newLen = speed * (1 - elapsed/lifetime);
+		velocity = velocity.normalized * newLen;
+
+		// move
+		transform.position += velocity * Time.deltaTime;
+	}
 }
+
