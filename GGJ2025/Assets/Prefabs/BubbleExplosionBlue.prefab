@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6900486708967706759}
   - component: {fileID: 9038887237274702952}
   m_Layer: 0
-  m_Name: BubbleExplosion
+  m_Name: BubbleExplosionBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
