@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -20,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
 
 	[SerializeField] private Grower playerSize;
 
+    public Action charge;
+    public Action dash;
+	private bool charging;
+
 	private void Awake() {
 		playerDir = playerDirObj.GetComponent<IInputDirection>();
 		playerMoveBtn = playerMoveBtnObj.GetComponent<IInputAction>();
@@ -32,13 +37,23 @@ public class PlayerMovement : MonoBehaviour
 
 		// charge
 		if (playerMoveBtn.buttonHold) {
-			dashCurrentCharge += Time.deltaTime;
+            if (charge != null && !charging)
+            {
+                charge.Invoke();
+                charging = true;
+            }
+            dashCurrentCharge += Time.deltaTime;
 			if (dashCurrentCharge > dashChargeTime) dashCurrentCharge = dashChargeTime;
 			return;
 		}
 
 		// dash
 		if (!playerMoveBtn.buttonUp) return;
+		if (dash != null)
+		{
+            dash.Invoke();
+			charging = false;
+        }
 		rb.linearVelocity = playerDir.direction * (dashCurrentCharge / dashChargeTime) * Mathf.Lerp(maxDashStrength, maxDashStrengthBig, (float)playerSize.stage / (float)playerSize.totalStages);
 		dashCurrentCharge = 0;
 	}
