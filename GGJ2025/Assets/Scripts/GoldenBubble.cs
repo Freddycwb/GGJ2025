@@ -6,19 +6,19 @@ public class GoldenBubble : MonoBehaviour
     [SerializeField] private float introSpeed;
     [SerializeField] private GameObject closestTarget;
     [SerializeField] private float escapeSpeed;
+    private bool onArea;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Start()
-    {
-        rb.AddForce(-transform.position.normalized * introSpeed);
-    }
-
     private void FixedUpdate()
     {
+        if (!onArea)
+        {
+            rb.AddForce(-transform.position.normalized * introSpeed);
+        }
         if (closestTarget != null)
         {
             Vector2 dir = transform.position - closestTarget.transform.position;
@@ -39,5 +39,10 @@ public class GoldenBubble : MonoBehaviour
         {
             closestTarget = value;
         }
+    }
+
+    public void SetOnArea()
+    {
+        onArea = true;
     }
 }

@@ -497,6 +497,7 @@ GameObject:
   - component: {fileID: 2119388817884958984}
   - component: {fileID: 6973724838812192299}
   - component: {fileID: 7068165888444682134}
+  - component: {fileID: 4466579928819071936}
   m_Layer: 0
   m_Name: GoldenBubble
   m_TagString: GoldenBubble
@@ -538,7 +539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7068165888444682134}
-  introSpeed: 100
+  introSpeed: 3
   closestTarget: {fileID: 0}
   escapeSpeed: 10
 --- !u!114 &6973724838812192299
@@ -582,6 +583,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4466579928819071936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8429686139018889524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5419647a6beb35f41b6f323aa179d766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8665819993290506899
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,6 +650,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2119388817884958984}
+        m_TargetAssemblyTypeName: GoldenBubble, Assembly-CSharp
+        m_MethodName: SetOnArea
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

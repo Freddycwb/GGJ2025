@@ -1106,7 +1106,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6215607103353195883}
   - component: {fileID: 2117185135331820321}
-  - component: {fileID: 5676440119264216993}
   - component: {fileID: 3726884994360344785}
   - component: {fileID: 4309381665220836340}
   m_Layer: 0
@@ -1148,37 +1147,6 @@ MonoBehaviour:
   totalStages: 5
   pointsPerStage: 10
   growAmount: 0.75
---- !u!114 &5676440119264216993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5861005078193148562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7711ecb93294b2748838b38b6955c6fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invokeAfter: {fileID: 8687340742624017013}
-  onActionCall:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2117185135331820321}
-        m_TargetAssemblyTypeName: Grower, Assembly-CSharp
-        m_MethodName: OnScoreChanged
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onSubActionCall:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &3726884994360344785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1613,6 +1581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3433375810538649451}
   - component: {fileID: 1646063620622244805}
+  - component: {fileID: 6486069149177540073}
   - component: {fileID: 8687340742624017013}
   - component: {fileID: 7525754403455814592}
   - component: {fileID: 6842079678953279060}
@@ -1674,6 +1643,63 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &6486069149177540073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8904098442326139926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1261e5badd538a46acac2c42b89919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 760f988714126694797fcd3bff22cd9a, type: 2}
+        m_TargetAssemblyTypeName: IntVariable, Assembly-CSharp
+        m_MethodName: Add
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: Colidiu
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 40cc24f3d07edd1418b1c6825baf7f6f, type: 2}
+        m_TargetAssemblyTypeName: GameEventString, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: Colidiu
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2117185135331820321}
+        m_TargetAssemblyTypeName: Grower, Assembly-CSharp
+        m_MethodName: OnScoreChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: Colidiu
+          m_BoolArgument: 0
+        m_CallState: 2
+  subAction:
+    m_PersistentCalls:
+      m_Calls: []
+  tags:
+  - GoldenBubble
+  collisionTypes: -1
 --- !u!114 &8687340742624017013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1693,6 +1719,30 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: IntVariable, Assembly-CSharp
         m_MethodName: Add
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: Colidiu
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 40cc24f3d07edd1418b1c6825baf7f6f, type: 2}
+        m_TargetAssemblyTypeName: GameEventString, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: Colidiu
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2117185135331820321}
+        m_TargetAssemblyTypeName: Grower, Assembly-CSharp
+        m_MethodName: OnScoreChanged
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
