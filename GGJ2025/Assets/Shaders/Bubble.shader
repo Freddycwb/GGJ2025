@@ -8,10 +8,12 @@ Shader "Custom/BubbleShader"
     }
     SubShader
     {
-        Blend SrcAlpha OneMinusSrcAlpha
         Tags { "DisableBatching" = "True" }
         Pass
         {
+            ZTest Off
+            Blend SrcAlpha OneMinusSrcAlpha
+
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
