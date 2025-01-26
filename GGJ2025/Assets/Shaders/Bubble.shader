@@ -43,7 +43,7 @@ Shader "Custom/BubbleShader"
                 v2f o;
 
                 // Usando a variável global _Time diretamente
-                float time = _Time.y; // _Time.y é o tempo global (segundos desde o início do jogo)
+                float time = _Time.y + _TimeOffset; // _Time.y é o tempo global (segundos desde o início do jogo)
 
                 // Manipula a posição do vértice para simular a flutuação e a mudança de tamanho
                 // Animação de flutuação (movendo a bolha para cima e para baixo no eixo Y)

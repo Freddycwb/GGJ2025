@@ -12,6 +12,7 @@ public class Bubble : MonoBehaviour
 
     void Start()
     {
+        GetComponentInChildren<Renderer>().material.SetFloat("_TimeOffset", Time.time);
         time_alive = Random.Range(min_time_alive, max_time_alive);
     }
 
