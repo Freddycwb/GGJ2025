@@ -31,8 +31,9 @@ public class PlayerMovement : MonoBehaviour
 	}
 
 	private void Update() {
-		// deaccel
-		float newLen = Mathf.Clamp(rb.linearVelocity.magnitude - deaccel * Time.deltaTime, 0, rb.linearVelocity.magnitude);
+        // deaccel
+
+        float newLen = Mathf.Clamp(rb.linearVelocity.magnitude - deaccel * Time.deltaTime, 0, rb.linearVelocity.magnitude);
 		rb.linearVelocity = rb.linearVelocity.normalized * newLen;
 
 		// charge

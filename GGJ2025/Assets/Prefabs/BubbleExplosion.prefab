@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1078793332525347247}
   - component: {fileID: 5574661926842438766}
   - component: {fileID: 6900486708967706759}
+  - component: {fileID: 9038887237274702952}
   m_Layer: 0
   m_Name: BubbleExplosion
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7569402427883956811}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.0982294, y: -0.28708178, z: -0.041581802}
+  m_LocalPosition: {x: 3.0982294, y: -0.28708178, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -77,7 +78,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -127,7 +128,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -4891,3 +4892,18 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &9038887237274702952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7569402427883956811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c9592c7427eca54186c97c457429297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 7569402427883956811}
+  delay: 2
+  onEnable: 1
