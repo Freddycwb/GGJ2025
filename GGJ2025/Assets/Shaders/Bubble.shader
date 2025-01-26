@@ -3,13 +3,17 @@ Shader "Custom/BubbleShader"
     Properties
     {
         _MainTex ("Base (RGB)", 2D) = "white" { }
-        _Resolution ("Resolution", Vector) = (1,1,0,0)
         _TimeOffset ("TimeOffset", Float) = 0.0
+        _DistortionStrength ("DistortionStrength", Vector) = (0.1, 0.1, 0.0, 0.0)
     }
     SubShader
     {
+        Tags { "DisableBatching" = "True" }
         Pass
         {
+            ZTest Off
+            Blend SrcAlpha OneMinusSrcAlpha
+
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
@@ -18,8 +22,8 @@ Shader "Custom/BubbleShader"
 
             // Declarações de variáveis
             sampler2D _MainTex;
-            float4 _Resolution;
             float _TimeOffset;
+            float4 _DistortionStrength;
 
             // Função de vértice
             struct appdata
@@ -47,11 +51,10 @@ Shader "Custom/BubbleShader"
                 // v.vertex.y += floatHeight;
 
                 // Animação de expansão e contração (modificando a escala da bolha)
-                float bubbleWidth = 1.0 + 0.2 * sin(time * 1.5); // Expansão e contração
-                float bubbleHeight = 1.0 + 0.2 * sin(time * 1.3); // Expansão e contração
+                float bubbleWidth  = 1.0 + _DistortionStrength.x * sin(time * 1.5); // Expansão e contração
+                float bubbleHeight = 1.0 + _DistortionStrength.y * sin(time * 1.3); // Expansão e contração
                 v.vertex.x *= bubbleWidth;
                 v.vertex.y *= bubbleHeight;
-                v.vertex.z *= bubbleWidth;
 
                 // Transformação para espaço de tela
                 o.pos = UnityObjectToClipPos(v.vertex);

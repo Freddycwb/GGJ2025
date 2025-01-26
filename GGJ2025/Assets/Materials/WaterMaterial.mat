@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BubbleMaterial
-  m_Shader: {fileID: 4800000, guid: cf1fbf4ced38443829bc4520131faa07, type: 3}
+  m_Name: WaterMaterial
+  m_Shader: {fileID: 4800000, guid: 7ba161a4dfa2f7ceba3d25082a0eb0e1, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -23,15 +23,39 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _EnableExternalAlpha: 0
     - _TimeOffset: 0
+    - _WaveAmplitude: 0.005
+    - _XAmplitude: 0.01
+    - _XFrequency: 20
+    - _XOffset: 1.5
+    - _XSpeed: 1
+    - _YAmplitude: 0.02
+    - _YFrequency: 20
+    - _YOffset: 0
+    - _YSpeed: 1
+    - _ZWrite: 0
     m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DistortionStrength: {r: 0.1, g: 0.1, b: 0, a: 0}
-    - _Resolution: {r: 1, g: 1, b: 0, a: 0}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
