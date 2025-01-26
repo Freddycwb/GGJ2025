@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bubble
   - Damage
+  - GoldenBubble
+  - Wall
   layers:
   - Default
   - TransparentFX

@@ -23,39 +23,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DispTex:
-        m_Texture: {fileID: 2800000, guid: 48b5cf26467574427b008ea8df3b9968, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 15dafaeb76bb647cdb47abf7afe54322, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MaskTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BubbleAmount: 0.1
-    - _BubbleSpeed: 1
-    - _EnableExternalAlpha: 0
-    - _Glossiness: 0.5
-    - _Intensity: 0.025
-    - _Speed: 0.5
     - _TimeOffset: 0
-    - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 0.42796195, g: 1, b: 0, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _Resolution: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

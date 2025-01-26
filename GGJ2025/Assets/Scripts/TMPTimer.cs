@@ -10,7 +10,7 @@ public class TMPTimer : MonoBehaviour
     {
         if (timer != null)
         {
-            tmp.text = timer.GetCurrentTimePass().ToString("F0");
+            tmp.text = Mathf.Ceil(timer.GetCurrentTimePass()).ToString("F0");
         }   
     }
 }
