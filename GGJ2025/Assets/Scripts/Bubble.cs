@@ -22,7 +22,7 @@ public class Bubble : MonoBehaviour
         if (time > time_alive)
         {
             lifetime_over.Invoke();
-            Destroy(gameObject, 500);
+            Destroy(gameObject, 2);
         }
     }
 }
