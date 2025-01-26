@@ -34,14 +34,20 @@ public class RumbleControl : MonoBehaviour
 
     private IEnumerator RumbleRoutine(Vector2 motorSpeed)
     {
-        // Debug.Log(motorSpeed);
-        Gamepad.all[id].SetMotorSpeeds(motorSpeed.x, motorSpeed.y);
-        yield return new WaitForSeconds(rumbleTime);
-        Gamepad.all[id].SetMotorSpeeds(0, 0);
+        if (Gamepad.all[id] != null)
+        {
+            Gamepad.all[id].SetMotorSpeeds(motorSpeed.x, motorSpeed.y);
+            yield return new WaitForSeconds(rumbleTime);
+            Gamepad.all[id].SetMotorSpeeds(0, 0);
+        }
     }
 
     private void OnDestroy()
     {
+        if (Gamepad.all[id] == null)
+        {
+            return;
+        }
         Gamepad.all[id].SetMotorSpeeds(0, 0);
     }
 }
