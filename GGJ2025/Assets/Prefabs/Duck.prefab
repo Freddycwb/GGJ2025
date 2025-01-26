@@ -46,12 +46,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 019261e2fa8737942bc542f3cacb0d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 4
-  delayTime: 1
+  lifetime: 4.25
+  delayTime: 1.25
   speed: 5
   verticalRange: 0.4
   collider: {fileID: 7431252588341834027}
   colliderDelay: 1
+  yPosRange: 0
 --- !u!1 &7431252588341834027
 GameObject:
   m_ObjectHideFlags: 0
