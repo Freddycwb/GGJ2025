@@ -1,5 +1,7 @@
 using System.Threading;
+using TMPro;
 using UnityEngine;
+using static Unity.Burst.Intrinsics.X86.Avx;
 
 public class GameController : MonoBehaviour
 {
@@ -11,6 +13,9 @@ public class GameController : MonoBehaviour
     [SerializeField] private IntVariable[] scores;
     [SerializeField] private int max_score = 30;
     [SerializeField] private GameEvent gameIsOver;
+    [SerializeField] private TextMeshPro tmp;
+
+    [SerializeField] private Color[] playersColors;
 
     private bool _is_game_end = false;
 
@@ -70,8 +75,13 @@ public class GameController : MonoBehaviour
 
     private void finishGame(int winner)
     {
-        Debug.Log("Player " + (winner + 1) + " Wins");
+        SetTextToPlayerColor(winner);
+        tmp.text = "Player " + (winner + 1) + " Wins";
         gameIsOver.Raise();
-        //TODO: endgame
+    }
+
+    private void SetTextToPlayerColor(int winner)
+    {
+        tmp.color = playersColors[winner];
     }
 }
