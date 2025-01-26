@@ -1,0 +1,565 @@
+fileFormatVersion: 2
+guid: 72e987cf2c0dca540b43784116cc2e5b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2280858299393351748
+    second: bolha_padrao_frame_3_0
+  - first:
+      213: 2655837606936298574
+    second: bolha_padrao_frame_3_1
+  - first:
+      213: 3821832063911439019
+    second: bolha_padrao_frame_3_2
+  - first:
+      213: -4191753074635416014
+    second: bolha_padrao_frame_3_3
+  - first:
+      213: -3545164347533343428
+    second: bolha_padrao_frame_3_4
+  - first:
+      213: 2677803513581737678
+    second: bolha_padrao_frame_3_5
+  - first:
+      213: -1646176048835850222
+    second: bolha_padrao_frame_3_6
+  - first:
+      213: 6282116407009038577
+    second: bolha_padrao_frame_3_7
+  - first:
+      213: -4985647942287728393
+    second: bolha_padrao_frame_3_8
+  - first:
+      213: -7691864872253249150
+    second: bolha_padrao_frame_3_9
+  - first:
+      213: -18566798918094042
+    second: bolha_padrao_frame_3_10
+  - first:
+      213: -8936287729264664682
+    second: bolha_padrao_frame_3_11
+  - first:
+      213: -4338468677941478436
+    second: bolha_padrao_frame_3_12
+  - first:
+      213: -7410475350024168923
+    second: bolha_padrao_frame_3_13
+  - first:
+      213: -4078171685717370761
+    second: bolha_padrao_frame_3_14
+  - first:
+      213: 8020508092156193541
+    second: bolha_padrao_frame_3_15
+  - first:
+      213: -4960137042754417513
+    second: bolha_padrao_frame_3_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_0
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 407
+        width: 84
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 440a75ee98c37af10800000000000000
+      internalID: 2280858299393351748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_1
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 440
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44cf867b3e6bd420800000000000000
+      internalID: 2655837606936298574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 438
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baaa3a06300e90530800000000000000
+      internalID: 3821832063911439019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 338
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e543899c6e3d5c0800000000000000
+      internalID: -4191753074635416014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_4
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 365
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3545ea1fcb0dcec0800000000000000
+      internalID: -3545164347533343428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 359
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec61555ab18792520800000000000000
+      internalID: 2677803513581737678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 395
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210126bfa9b9729e0800000000000000
+      internalID: -1646176048835850222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_7
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 306
+        width: 83
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f05d6d869f8e2750800000000000000
+      internalID: 6282116407009038577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_8
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 381
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f068c09c9b6fcab0800000000000000
+      internalID: -4985647942287728393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 212
+        width: 92
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2892a05e6a1014590800000000000000
+      internalID: -7691864872253249150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_10
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 312
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623fed148990ebff0800000000000000
+      internalID: -18566798918094042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_11
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 303
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f5f7e18adebf380800000000000000
+      internalID: -8936287729264664682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_12
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 254
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbb32e39b9aac3c0800000000000000
+      internalID: -4338468677941478436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_13
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 192
+        width: 41
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a55097ee3b82990800000000000000
+      internalID: -7410475350024168923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_14
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 186
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77892cb757c6767c0800000000000000
+      internalID: -4078171685717370761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_15
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 33
+        width: 329
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50bad178d919e4f60800000000000000
+      internalID: 8020508092156193541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_16
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 91
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ccd59b3ad0a2bb0800000000000000
+      internalID: -4960137042754417513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bolha_padrao_frame_3_17
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 480
+        height: 486
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62dda15839a650b4e8d41b5b68c1be42
+      internalID: -1213609619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 565b17742faad5c4186e02ad5f0a967d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bolha_padrao_frame_3_17: -1213609619
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

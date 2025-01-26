@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Bubble : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class Bubble : MonoBehaviour
     [SerializeField] private float min_time_alive = 5.0f;
     private float time_alive;
     private float time = 0;
+    [SerializeField] public UnityEvent lifetime_over;
 
     void Start()
     {
@@ -19,7 +21,8 @@ public class Bubble : MonoBehaviour
         time += Time.deltaTime;
         if (time > time_alive)
         {
-            Destroy(gameObject);
+            lifetime_over.Invoke();
+            Destroy(gameObject, 500);
         }
     }
 }
