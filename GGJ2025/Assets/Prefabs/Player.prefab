@@ -760,8 +760,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashChargeTime: 0.65
   dashCurrentCharge: 0
-  maxDashStrength: 12
-  maxDashStrengthBig: 6
+  maxDashStrength: 14
+  maxDashStrengthBig: 8.5
   deaccel: 10
   playerDirObj: {fileID: 8439657228522155217}
   playerMoveBtnObj: {fileID: 3786440743322021624}
