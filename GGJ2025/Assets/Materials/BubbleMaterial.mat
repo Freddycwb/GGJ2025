@@ -31,6 +31,7 @@ Material:
     m_Floats:
     - _TimeOffset: 0
     m_Colors:
+    - _DistortionStrength: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _Resolution: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
