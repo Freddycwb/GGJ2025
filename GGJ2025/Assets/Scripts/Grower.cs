@@ -14,7 +14,7 @@ public class Grower : MonoBehaviour
 
 	public void OnScoreChanged() {
 		int oldStage = stage;
-		stage = score.Value / pointsPerStage;
+		stage = Mathf.Clamp(score.Value / pointsPerStage, 0, totalStages-1);
 		if (oldStage != stage) stageChanged?.Invoke();
 	}
 }
