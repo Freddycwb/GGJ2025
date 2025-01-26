@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 273a16b8aa7e2fe4bac0a29402189c83
+guid: 0c84686df8ab23646b92eb94cf8d4586
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6320934788421398711
-    second: bolha1_tamanho1_completa_0
+      213: -868669075962016073
+    second: bolha2_tamanho3_sem_sombra_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bolha1_tamanho1_completa_0
+      name: bolha2_tamanho3_sem_sombra_0
       rect:
         serializedVersion: 2
-        x: 381
-        y: 409
-        width: 238
-        height: 224
+        x: 353
+        y: 430
+        width: 279
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94fcbb7bc478748a0800000000000000
-      internalID: -6320934788421398711
+      spriteID: 7becaebe31ed1f3f0800000000000000
+      internalID: -868669075962016073
       vertices: []
       indices: 
       edges: []

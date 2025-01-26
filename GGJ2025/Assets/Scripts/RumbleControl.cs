@@ -34,7 +34,7 @@ public class RumbleControl : MonoBehaviour
 
     private IEnumerator RumbleRoutine(Vector2 motorSpeed)
     {
-        Debug.Log(motorSpeed);
+        // Debug.Log(motorSpeed);
         Gamepad.all[id].SetMotorSpeeds(motorSpeed.x, motorSpeed.y);
         yield return new WaitForSeconds(rumbleTime);
         Gamepad.all[id].SetMotorSpeeds(0, 0);

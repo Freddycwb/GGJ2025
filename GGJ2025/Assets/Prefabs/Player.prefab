@@ -620,8 +620,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1191993630693225885}
   m_Father: {fileID: 6592074215815915991}
@@ -670,12 +670,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: -6320934788421398711, guid: 2c3242eed5b696547833fc23785f7ab2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.38, y: 2.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -708,6 +708,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grower: {fileID: 2117185135331820321}
+  playerSprites:
+  - {fileID: -6320934788421398711, guid: 2c3242eed5b696547833fc23785f7ab2, type: 3}
+  - {fileID: -182025666933164755, guid: 70692735a2337b544ae835a4ecf04029, type: 3}
+  - {fileID: 6212680062047577802, guid: d67074be2ca361349b782e5591f86723, type: 3}
+  - {fileID: -8735336221576668197, guid: 4ae09643e19b9874e9053792cf019556, type: 3}
+  - {fileID: 8838426212784245895, guid: f38afdeb41c64d94d889ce22797fde11, type: 3}
+  shadowSprites: []
 --- !u!114 &854843715894226511
 MonoBehaviour:
   m_ObjectHideFlags: 0

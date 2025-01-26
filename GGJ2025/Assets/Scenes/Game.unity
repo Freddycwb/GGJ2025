@@ -441,6 +441,26 @@ PrefabInstance:
       propertyPath: id
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -3592282266013355387, guid: 2db321cf4064b5d419c7471bc2f5b6f7, type: 3}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6491257699499772854, guid: a5fefe7702868d04c8c1d3993c92a552, type: 3}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8561293400214373279, guid: 2b4b74f0acc127d4a8df5b2984744753, type: 3}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: 7643263798026072236, guid: 9d6e3cace77262842bbf04338e2d40e9, type: 3}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[4]'
+      value: 
+      objectReference: {fileID: -8651371184910837638, guid: 9052788c98213ca47ad3e5ce1b14d48d, type: 3}
     - target: {fileID: 5399974768967575965, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: onActionCall.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
@@ -2687,6 +2707,26 @@ PrefabInstance:
       propertyPath: id
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -6445690503190888508, guid: ffbfc949a9ad78e449e199676c7ad72a, type: 3}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1879731313805589419, guid: 961078abe01751a459b9b74dc3365e7a, type: 3}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8091258046427290715, guid: 5c49d73b3af52e748bfe9fbf893f9475, type: 3}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: -1043203222162421945, guid: cb85c90be783d2946a6e424e5a5c020d, type: 3}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[4]'
+      value: 
+      objectReference: {fileID: -4863241722704484836, guid: ea241a28dfbd5c6409c4f77c000d30c9, type: 3}
     - target: {fileID: 5399974768967575965, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: onActionCall.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
@@ -3764,6 +3804,26 @@ PrefabInstance:
       propertyPath: id
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1040039936744290382, guid: d382815e3f862b6409dd31c40eac828a, type: 3}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: -6759698594361509690, guid: bf52b9d5abe4cde4f83e846a28ca3ad5, type: 3}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: -4437884074986068842, guid: 29e890e7a69f9f24891e6e5c01834547, type: 3}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: -6077982261411017052, guid: 763ffd1858c98a14f876efcae890df47, type: 3}
+    - target: {fileID: 5273251159102345575, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
+      propertyPath: 'playerSprites.Array.data[4]'
+      value: 
+      objectReference: {fileID: 3086477070167294754, guid: 26cb42e84bdefae4d8a0f60ee49b4603, type: 3}
     - target: {fileID: 5399974768967575965, guid: 575e81b648b79fa4d8ec2b7b55c87c59, type: 3}
       propertyPath: onActionCall.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
