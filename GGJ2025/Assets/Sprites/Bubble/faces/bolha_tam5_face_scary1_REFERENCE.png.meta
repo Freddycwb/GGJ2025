@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bolha_tam5_face_scary1_REFERENCE_0: -7990824885504733958
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
