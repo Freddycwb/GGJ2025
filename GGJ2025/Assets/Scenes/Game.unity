@@ -1665,7 +1665,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 13
+  timeToAction: 60
   startTimerOnEnabled: 0
   overrideLastTimer: 1
   useUnscaledTime: 0
