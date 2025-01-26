@@ -76,7 +76,13 @@ public class GameController : MonoBehaviour
     private void finishGame(int winner)
     {
         SetTextToPlayerColor(winner);
-        tmp.text = "Player " + (winner + 1) + " Wins";
+        string text = "";
+        if (winner == 0) { text = "Blue"; }
+        else if (winner == 1) { text = "Green"; }
+        else if (winner == 2) { text = "Purple"; }
+        else if (winner == 4) { text = "Yellow"; }
+
+        tmp.text = text;
         gameIsOver.Raise();
     }
 
