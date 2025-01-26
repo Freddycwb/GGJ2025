@@ -26,10 +26,13 @@ public class Duck : MonoBehaviour
 
 		float x = transform.position.x < 0.0f? 1 : -1;
 		float y = Random.Range(-verticalRange, verticalRange);
+
 		Vector2 dir = new Vector2(x, y).normalized;
 		velocity = dir * speed;
 
-		startTime = Time.time;
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90);
+
+        startTime = Time.time;
 	}
 
 	private void Update() {
